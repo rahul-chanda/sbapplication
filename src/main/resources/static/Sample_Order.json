@@ -1,0 +1,262 @@
+[
+  {
+    "href": "http://example.com/service-orders/12345",
+    "cancellationDate": "2023-10-11T10:00:00",
+    "cancellationReason": "Customer request",
+    "category": "Installation",
+    "completionDate": "2023-10-10T15:00:00",
+    "description": "Service order for new internet installation",
+    "expectedCompletionDate": "2023-10-09T12:00:00",
+    "externalId": "EXT-67890",
+    "notificationContact": "customer@example.com",
+    "orderDate": "2023-09-30T09:00:00",
+    "priority": "High",
+    "requestedCompletionDate": "2023-10-08T18:00:00",
+    "requestedStartDate": "2023-10-02T08:00:00",
+    "startDate": "2023-10-02T09:00:00",
+    "externalReference": [
+      {
+        "id": "ext-ref-1",
+        "externalReferenceType": "CRM",
+        "name": "CRM-System",
+        "baseType": "ExternalReference",
+        "schemaLocation": "http://example.com/schema/external-ref",
+        "type": "ExternalSystem"
+      }
+    ],
+    "note": [
+      {
+        "id": "note-1",
+        "author": "John Doe",
+        "date": "2023-09-29T12:00:00",
+        "text": "Customer prefers installation in the morning.",
+        "baseType": "Note",
+        "schemaLocation": "http://example.com/schema/note",
+        "type": "Technical"
+      }
+    ],
+    "orderRelationship": [
+      {
+        "id": "rel-1",
+        "href": "http://example.com/orders/rel-1",
+        "relationshipType": "Dependency",
+        "baseType": "OrderRelationship",
+        "schemaLocation": "http://example.com/schema/order-relationship",
+        "type": "Dependency",
+        "referredType": "ServiceOrder"
+      }
+    ],
+    "relatedParty": [
+      {
+        "id": "party-1",
+        "href": "http://example.com/parties/party-1",
+        "name": "Jane Doe",
+        "role": "Customer",
+        "baseType": "RelatedParty",
+        "schemaLocation": "http://example.com/schema/related-party",
+        "type": "Individual",
+        "referredType": "Person"
+      }
+    ],
+    "serviceOrderItem": [
+      {
+        "id": "item-1",
+        "quantity": 1,
+        "action": "Add",
+        "appointment": {
+          "id": "appt-1",
+          "href": null,
+          "appointmentType": null,
+          "appointmentDateTime": null,
+          "appointmentState": null,
+          "baseType": "Appointment",
+          "schemaLocation": "http://example.com/schema/appointment",
+          "type": "Install",
+          "referredType": null
+        },
+        "service": {
+          "id": "service-1",
+          "href": "http://example.com/services/service-1",
+          "category": "Internet",
+          "description": "High-speed internet service",
+          "endDate": "2024-10-02T00:00:00",
+          "hasStarted": true,
+          "name": "Fiber 100 Mbps",
+          "serviceDate": "2023-10-02T09:00:00",
+          "serviceType": "Residential",
+          "startDate": "2023-10-02T09:00:00",
+          "startMode": "Immediate",
+          "feature": [],
+          "note": [],
+          "relatedEntity": [],
+          "relatedParty": [],
+          "serviceCharacteristic": [],
+          "serviceRelationship": [],
+          "serviceSpecification": null,
+          "state": "Active",
+          "supportingService": null,
+          "baseType": null,
+          "schemaLocation": null,
+          "type": null,
+          "referredType": null,
+          "bundle": false,
+          "stateful": true,
+          "serviceEnabled": true
+        },
+        "serviceOrderItemRelationship": [
+          {
+            "id": "rel-item-1",
+            "name": null,
+            "relationshipType": "reliesOn",
+            "baseType": "ItemRelationship",
+            "schemaLocation": "http://example.com/schema/service-order-item-relationship",
+            "type": "dependency",
+            "relatedEntity": null,
+            "externalReference": null,
+            "featureCharacteristic": null,
+            "featureRelationship": null
+          }
+        ],
+        "state": "Acknowledged",
+        "baseType": null,
+        "schemaLocation": null,
+        "type": null
+      }
+    ],
+    "state": "InProgress",
+    "version": 1,
+    "baseType": null,
+    "schemaLocation": null,
+    "type": null
+  },
+  {
+    "href": "http://example.com/service-orders/12345",
+    "cancellationDate": "2023-10-11T10:00:00",
+    "cancellationReason": "Customer request",
+    "category": "Installation",
+    "completionDate": "2023-10-10T15:00:00",
+    "description": "Service order for new internet installation",
+    "expectedCompletionDate": "2023-10-09T12:00:00",
+    "externalId": "EXT-67890",
+    "notificationContact": "customer@example.com",
+    "orderDate": "2023-09-30T09:00:00",
+    "priority": "High",
+    "requestedCompletionDate": "2023-10-08T18:00:00",
+    "requestedStartDate": "2023-10-02T08:00:00",
+    "startDate": "2023-10-02T09:00:00",
+    "externalReference": [
+      {
+        "id": "ext-ref-2",
+        "externalReferenceType": "CRM",
+        "name": "CRM-System",
+        "type": "ExternalSystem",
+        "baseType": "ExternalReference",
+        "schemaLocation": "http://example.com/schema/external-ref"
+      }
+    ],
+    "note": [
+      {
+        "id": "note-2",
+        "author": "John Doe",
+        "date": "2023-09-29T12:00:00",
+        "text": "Customer prefers installation in the morning.",
+        "baseType": "Note",
+        "schemaLocation": "http://example.com/schema/note",
+        "type": "Technical"
+      }
+    ],
+    "orderRelationship": [
+      {
+        "id": "rel-2",
+        "href": "http://example.com/orders/rel-1",
+        "relationshipType": "Dependency",
+        "baseType": "OrderRelationship",
+        "schemaLocation": "http://example.com/schema/order-relationship",
+        "type": "Dependency",
+        "referredType": "ServiceOrder"
+      }
+    ],
+    "relatedParty": [
+      {
+        "id": "party-2",
+        "href": "http://example.com/parties/party-1",
+        "name": "Jane Doe",
+        "role": "Customer",
+        "baseType": "RelatedParty",
+        "schemaLocation": "http://example.com/schema/related-party",
+        "type": "Individual",
+        "referredType": "Person"
+      }
+    ],
+    "serviceOrderItem": [
+      {
+        "id": "item-2",
+        "quantity": 2,
+        "action": "Add",
+        "appointment": {
+          "id": "appt-2",
+          "href": null,
+          "appointmentType": null,
+          "appointmentDateTime": null,
+          "appointmentState": null,
+          "baseType": "Appointment",
+          "schemaLocation": "http://example.com/schema/appointment",
+          "type": "Install",
+          "referredType": null
+        },
+        "service": {
+          "id": "service-2",
+          "href": "http://example.com/services/service-1",
+          "category": "Internet",
+          "description": "High-speed internet service",
+          "endDate": "2024-10-02T00:00:00",
+          "hasStarted": true,
+          "name": "Fiber 100 Mbps",
+          "serviceDate": "2023-10-02T09:00:00",
+          "serviceType": "Residential",
+          "startDate": "2023-10-02T09:00:00",
+          "startMode": "Immediate",
+          "feature": [],
+          "note": [],
+          "relatedEntity": [],
+          "relatedParty": [],
+          "serviceCharacteristic": [],
+          "serviceRelationship": [],
+          "serviceSpecification": null,
+          "state": "Active",
+          "supportingService": null,
+          "baseType": null,
+          "schemaLocation": null,
+          "type": null,
+          "referredType": null,
+          "bundle": false,
+          "stateful": true,
+          "serviceEnabled": true
+        },
+        "serviceOrderItemRelationship": [
+          {
+            "id": "rel-item-2",
+            "name": null,
+            "relationshipType": "reliesOn",
+            "baseType": "ItemRelationship",
+            "schemaLocation": "http://example.com/schema/service-order-item-relationship",
+            "type": "dependency",
+            "relatedEntity": null,
+            "externalReference": null,
+            "featureCharacteristic": null,
+            "featureRelationship": null
+          }
+        ],
+        "state": "Acknowledged",
+        "baseType": null,
+        "schemaLocation": null,
+        "type": null
+      }
+    ],
+    "state": "InProgress",
+    "version": 2,
+    "baseType": null,
+    "schemaLocation": null,
+    "type": null
+  }
+]
