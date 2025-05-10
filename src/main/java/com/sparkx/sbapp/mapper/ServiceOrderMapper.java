@@ -3,6 +3,7 @@ package com.sparkx.sbapp.mapper;
 import com.sparkx.sbapp.dto.ServiceOrderDTO;
 import com.sparkx.sbapp.model.ServiceOrder;
 import org.mapstruct.Mapper;
+import org.springframework.stereotype.Component;
 
 @Mapper(componentModel = "spring", uses = {
         AppointmentMapper.class,

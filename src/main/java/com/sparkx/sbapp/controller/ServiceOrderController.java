@@ -22,7 +22,7 @@ public class ServiceOrderController {
     }
 
     // Get all orders
-    @GetMapping("/all")
+    @GetMapping
     public ResponseEntity<List<ServiceOrderDTO>> getAllOrders() {
         List<ServiceOrderDTO> orders = serviceOrderService.getAllOrders();
         return ResponseEntity.ok(orders);

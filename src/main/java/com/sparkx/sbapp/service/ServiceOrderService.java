@@ -16,6 +16,7 @@ public class ServiceOrderService {
     @Autowired
     public ServiceOrderRepository serviceOrderRepository;
 
+    @Autowired
     public final ServiceOrderMapper serviceOrderMapper;
 
     public ServiceOrderService(ServiceOrderMapper serviceOrderMapper) {
